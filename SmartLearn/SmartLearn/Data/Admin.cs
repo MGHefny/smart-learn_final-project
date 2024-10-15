@@ -7,18 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SmartLearn
+namespace SmartLearn.Data
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Trainee_Courses
+    public partial class Admin
     {
-        public int Trainee_Id { get; set; }
-        public int Course_Id { get; set; }
-        public System.DateTime Registration_Date { get; set; }
-    
-        public virtual Course Course { get; set; }
-        public virtual Trainee Trainee { get; set; }
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
     }
 }

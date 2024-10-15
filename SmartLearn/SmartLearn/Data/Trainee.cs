@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SmartLearn
+namespace SmartLearn.Data
 {
     using System;
     using System.Collections.Generic;

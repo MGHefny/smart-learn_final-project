@@ -66,8 +66,8 @@ G:\smart learn\SmartLearn\SmartLearn\bin\System.Web.Webpages.Razor.xml
 G:\smart learn\SmartLearn\SmartLearn\bin\System.Web.Helpers.xml
 G:\smart learn\SmartLearn\SmartLearn\bin\System.Web.Mvc.xml
 G:\smart learn\SmartLearn\SmartLearn\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-G:\smart learn\SmartLearn\SmartLearn\obj\Debug\SmartLearn.csprojAssemblyReference.cache
 G:\smart learn\SmartLearn\SmartLearn\obj\Debug\SmartLearn.csproj.CoreCompileInputs.cache
 G:\smart learn\SmartLearn\SmartLearn\obj\Debug\SmartLearn.csproj.CopyComplete
 G:\smart learn\SmartLearn\SmartLearn\obj\Debug\SmartLearn.dll
 G:\smart learn\SmartLearn\SmartLearn\obj\Debug\SmartLearn.pdb
+G:\smart learn\SmartLearn\SmartLearn\obj\Debug\SmartLearn.csprojAssemblyReference.cache

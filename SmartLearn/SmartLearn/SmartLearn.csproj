@@ -96,96 +96,127 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\Admin\login.html" />
     <Content Include="assets\demo\chart-area-demo.js" />
     <Content Include="assets\demo\chart-bar-demo.js" />
     <Content Include="assets\demo\chart-pie-demo.js" />
     <Content Include="assets\demo\datatables-demo.js" />
+    <Content Include="assets\favicon.ico" />
     <Content Include="assets\img\error-404-monochrome.svg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="CoursesModel.Context.tt">
+    <Content Include="Data\CoursesModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>CoursesModel.edmx</DependentUpon>
       <LastGenOutput>CoursesModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="CoursesModel.tt">
+    <Content Include="Data\CoursesModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>CoursesModel.edmx</DependentUpon>
       <LastGenOutput>CoursesModel.cs</LastGenOutput>
     </Content>
     <Content Include="css\styles.css" />
+    <Content Include="css\styleshp.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
     <Content Include="js\datatables-simple-demo.js" />
     <Content Include="js\scripts.js" />
+    <Content Include="js\scriptshp.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Areas\Instructor\Views\web.config" />
+    <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Admin\Views\Default\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Course\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Account\Login.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_OfflineLayout.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\Delete.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Web.config" />
-    <Content Include="Views\Shared\_Layout - Copy.cshtml" />
     <Content Include="Views\Course\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin.cs">
+    <Compile Include="Areas\Admin\Controllers\AccountController.cs" />
+    <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
+    <Compile Include="Areas\Admin\Models\LoginModel.cs" />
+    <Compile Include="Data\Admin.cs">
       <DependentUpon>CoursesModel.tt</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Category.cs">
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\CourseController.cs" />
+    <Compile Include="Areas\Admin\Controllers\DefaultController.cs" />
+    <Compile Include="Areas\Instructor\InstructorAreaRegistration.cs" />
+    <Compile Include="Data\Category.cs">
       <DependentUpon>CoursesModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Controllers\CourseController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
-    <Compile Include="Course.cs">
+    <Compile Include="Data\Course.cs">
       <DependentUpon>CoursesModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="CoursesModel.Context.cs">
+    <Compile Include="Data\CoursesModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CoursesModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="CoursesModel.cs">
+    <Compile Include="Data\CoursesModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CoursesModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="CoursesModel.Designer.cs">
+    <Compile Include="Data\CoursesModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CoursesModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Course_Lessons.cs">
+    <Compile Include="Data\Course_Lessons.cs">
       <DependentUpon>CoursesModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CategoryModel.cs" />
+    <Compile Include="Models\CourseModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Trainee.cs">
+    <Compile Include="Data\Trainee.cs">
       <DependentUpon>CoursesModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Trainee_Courses.cs">
+    <Compile Include="Data\Trainee_Courses.cs">
       <DependentUpon>CoursesModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Trainer.cs">
+    <Compile Include="Data\Trainer.cs">
       <DependentUpon>CoursesModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Services\AdminService.cs" />
+    <Compile Include="Services\CategoryService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
-    <EntityDeploy Include="CoursesModel.edmx">
+    <EntityDeploy Include="Data\CoursesModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>CoursesModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="CoursesModel.edmx.diagram">
+    <Content Include="Data\CoursesModel.edmx.diagram">
       <DependentUpon>CoursesModel.edmx</DependentUpon>
     </Content>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -211,7 +242,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="Areas\Instructor\Controllers\" />
+    <Folder Include="Areas\Instructor\Models\" />
+    <Folder Include="Areas\Instructor\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
