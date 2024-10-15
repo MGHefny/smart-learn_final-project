@@ -15,3 +15,10 @@ make mapping for Database
 install the bootstrap themes 
 custome the main indx 
 bult controller for courses and main controllers
+*********
+15-10
+-----
+finish db 
+finsh admin login
+finsh categories page 
+finish creat and update and delet category with admin page
