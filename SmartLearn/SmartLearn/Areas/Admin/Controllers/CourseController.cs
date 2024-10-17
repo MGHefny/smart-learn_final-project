@@ -10,6 +10,7 @@ using System.Web.Mvc;
 
 namespace SmartLearn.Areas.Admin.Controllers
 {
+    //Courses Controller 
     public class CourseController : Controller
     {
         private readonly IMapper mapper;
