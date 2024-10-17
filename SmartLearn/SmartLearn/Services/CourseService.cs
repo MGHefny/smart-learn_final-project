@@ -8,6 +8,7 @@ namespace SmartLearn.Services
 {
     public interface ICourseService
     {
+        // Courses Service
         int Create(Course course);
         int Update(Course updatedCourse);
         List<Course> ReadAll();
