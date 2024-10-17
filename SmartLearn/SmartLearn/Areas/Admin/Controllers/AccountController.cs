@@ -10,7 +10,7 @@ namespace SmartLearn.Areas.Admin.Controllers
 {
     public class AccountController : Controller
     {
-        // GET: Admin/Account/Login
+        // Admin Account
         public ActionResult Login()
         {
             return View();
