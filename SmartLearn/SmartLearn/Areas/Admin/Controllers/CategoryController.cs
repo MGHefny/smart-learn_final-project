@@ -10,6 +10,7 @@ using System.Web.Mvc;
 
 namespace SmartLearn.Areas.Admin.Controllers
 {
+    // Category Controller 
     public class CategoryController : Controller
     {
         private readonly CategoryService categoryService;
