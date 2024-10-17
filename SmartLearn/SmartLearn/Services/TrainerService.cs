@@ -8,6 +8,7 @@ namespace SmartLearn.Services
 {
     public interface ITrainerService
     {
+        // Trainer service
         int Create(Trainer trainer);
         Trainer FindByEmail(string email);
         Trainer ReadById(int Id);
