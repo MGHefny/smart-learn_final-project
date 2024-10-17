@@ -6,6 +6,7 @@ using System.Web;
 
 namespace SmartLearn.Services
 {
+    //admin Service
     public interface IAdminService
     {
         bool Login(string Email, string Password);
