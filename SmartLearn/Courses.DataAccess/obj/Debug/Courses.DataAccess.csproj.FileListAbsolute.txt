@@ -1,0 +1,6 @@
+G:\smart learn\SmartLearn\Courses.DataAccess\bin\Debug\Courses.DataAccess.dll
+G:\smart learn\SmartLearn\Courses.DataAccess\bin\Debug\Courses.DataAccess.pdb
+G:\smart learn\SmartLearn\Courses.DataAccess\obj\Debug\Courses.DataAccess.csprojAssemblyReference.cache
+G:\smart learn\SmartLearn\Courses.DataAccess\obj\Debug\Courses.DataAccess.csproj.CoreCompileInputs.cache
+G:\smart learn\SmartLearn\Courses.DataAccess\obj\Debug\Courses.DataAccess.dll
+G:\smart learn\SmartLearn\Courses.DataAccess\obj\Debug\Courses.DataAccess.pdb

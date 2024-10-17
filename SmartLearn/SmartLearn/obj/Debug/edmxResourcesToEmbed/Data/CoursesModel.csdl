@@ -28,7 +28,7 @@
     <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Creation_Date" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="Categrory_Id" Type="Int32" Nullable="false" />
+    <Property Name="Category_Id" Type="Int32" Nullable="false" />
     <Property Name="Trainer_Id" Type="Int32" />
     <NavigationProperty Name="Category" Relationship="Self.FK_Course_Category_Id" FromRole="Course" ToRole="Category" />
     <NavigationProperty Name="Course_Lessons" Relationship="Self.FK_Course_Lessons_Course_Id" FromRole="Course" ToRole="Course_Lessons" />

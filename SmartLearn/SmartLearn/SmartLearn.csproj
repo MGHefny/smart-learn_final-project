@@ -43,6 +43,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=9.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.9.0.0\lib\net461\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -108,6 +111,8 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="css\styles.css" />
+    <Content Include="css\styleshp.css" />
     <Content Include="Data\CoursesModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>CoursesModel.edmx</DependentUpon>
@@ -118,8 +123,6 @@
       <DependentUpon>CoursesModel.edmx</DependentUpon>
       <LastGenOutput>CoursesModel.cs</LastGenOutput>
     </Content>
-    <Content Include="css\styles.css" />
-    <Content Include="css\styleshp.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
@@ -140,6 +143,17 @@
     <Content Include="Areas\Admin\Views\Category\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Category\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Category\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Trainer\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Trainer\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Course\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Course\Edit.cshtml" />
+    <EntityDeploy Include="Data\CoursesModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CoursesModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Data\CoursesModel.edmx.diagram">
+      <DependentUpon>CoursesModel.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -151,26 +165,38 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Uploads\Courses\c#.png" />
+    <Content Include="Uploads\Courses\c+.png" />
+    <Content Include="Uploads\Courses\ccna.jpg" />
+    <Content Include="Uploads\Courses\flutter.jpg" />
+    <Content Include="Uploads\Courses\Html.jpg" />
+    <Content Include="Uploads\Courses\java.jpg" />
+    <Content Include="Uploads\Courses\python.jpg" />
+    <Content Include="Uploads\Courses\ruby.jpg" />
+    <Content Include="Uploads\Courses\sysad.jpg" />
+    <Content Include="Uploads\Courses\ubuntu.png" />
     <Content Include="Web.config" />
     <Content Include="Views\Course\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\AutoMapperConfig.cs" />
     <Compile Include="Areas\Admin\Controllers\AccountController.cs" />
     <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
+    <Compile Include="Areas\Admin\Controllers\TrainerController.cs" />
     <Compile Include="Areas\Admin\Models\LoginModel.cs" />
-    <Compile Include="Data\Admin.cs">
-      <DependentUpon>CoursesModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\CourseController.cs" />
     <Compile Include="Areas\Admin\Controllers\DefaultController.cs" />
     <Compile Include="Areas\Instructor\InstructorAreaRegistration.cs" />
+    <Compile Include="Controllers\CourseController.cs" />
+    <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Data\Admin.cs">
+      <DependentUpon>CoursesModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Data\Category.cs">
       <DependentUpon>CoursesModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Controllers\CourseController.cs" />
-    <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Data\Course.cs">
       <DependentUpon>CoursesModel.tt</DependentUpon>
     </Compile>
@@ -192,12 +218,6 @@
     <Compile Include="Data\Course_Lessons.cs">
       <DependentUpon>CoursesModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="Models\CategoryModel.cs" />
-    <Compile Include="Models\CourseModel.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Data\Trainee.cs">
       <DependentUpon>CoursesModel.tt</DependentUpon>
     </Compile>
@@ -207,18 +227,20 @@
     <Compile Include="Data\Trainer.cs">
       <DependentUpon>CoursesModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CategoryModel.cs" />
+    <Compile Include="Models\CourseModel.cs" />
+    <Compile Include="Models\TrainerModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AdminService.cs" />
     <Compile Include="Services\CategoryService.cs" />
+    <Compile Include="Services\CourseService.cs" />
+    <Compile Include="Services\TrainerService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
-    <EntityDeploy Include="Data\CoursesModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>CoursesModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Data\CoursesModel.edmx.diagram">
-      <DependentUpon>CoursesModel.edmx</DependentUpon>
-    </Content>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -230,9 +252,9 @@
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Default\Index.cshtml" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+    <Content Include="Views\Default\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

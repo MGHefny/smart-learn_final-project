@@ -25,7 +25,7 @@ namespace SmartLearn.Data
         public string Name { get; set; }
         public System.DateTime Creation_Date { get; set; }
         public string Description { get; set; }
-        public int Categrory_Id { get; set; }
+        public int Category_Id { get; set; }
         public Nullable<int> Trainer_Id { get; set; }
     
         public virtual Category Category { get; set; }

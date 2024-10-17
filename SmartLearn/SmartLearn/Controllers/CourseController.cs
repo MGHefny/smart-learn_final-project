@@ -12,22 +12,7 @@ namespace SmartLearn.Controllers
         // GET: Course
         public ActionResult Index()
         {
-            var lstCourses = new List<CourseModel>
-            {
-                new CourseModel
-                {
-                    Id =1,
-                    Title =".net",
-                    Description = "test"
-                },
-                new CourseModel
-                {
-                    Id =2,
-                    Title ="C#",
-                    Description = "test2"
-                }
-            };
-            return View(lstCourses);
+            return View();
         }
     }
 }

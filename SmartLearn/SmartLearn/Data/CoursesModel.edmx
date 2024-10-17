@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Courses_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="Courses_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Admin">
           <Key>
             <PropertyRef Name="ID" />
@@ -30,7 +30,7 @@
           <Property Name="Name" Type="nvarchar" MaxLength="200" Nullable="false" />
           <Property Name="Creation_Date" Type="datetime" Nullable="false" />
           <Property Name="Description" Type="nvarchar(max)" />
-          <Property Name="Categrory_Id" Type="int" Nullable="false" />
+          <Property Name="Category_Id" Type="int" Nullable="false" />
           <Property Name="Trainer_Id" Type="int" />
         </EntityType>
         <EntityType Name="Course_Lessons">
@@ -178,8 +178,7 @@
             <End Role="Trainee_Courses" EntitySet="Trainee_Courses" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="Courses_DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -211,7 +210,7 @@
           <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Creation_Date" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="Categrory_Id" Type="Int32" Nullable="false" />
+          <Property Name="Category_Id" Type="Int32" Nullable="false" />
           <Property Name="Trainer_Id" Type="Int32" />
           <NavigationProperty Name="Category" Relationship="Self.FK_Course_Category_Id" FromRole="Course" ToRole="Category" />
           <NavigationProperty Name="Course_Lessons" Relationship="Self.FK_Course_Lessons_Course_Id" FromRole="Course" ToRole="Course_Lessons" />
@@ -400,7 +399,7 @@
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Creation_Date" ColumnName="Creation_Date" />
                 <ScalarProperty Name="Description" ColumnName="Description" />
-                <ScalarProperty Name="Categrory_Id" ColumnName="Categrory_Id" />
+                <ScalarProperty Name="Category_Id" ColumnName="Category_Id" />
                 <ScalarProperty Name="Trainer_Id" ColumnName="Trainer_Id" />
               </MappingFragment>
             </EntityTypeMapping>

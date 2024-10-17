@@ -25,7 +25,7 @@
     <Property Name="Name" Type="nvarchar" MaxLength="200" Nullable="false" />
     <Property Name="Creation_Date" Type="datetime" Nullable="false" />
     <Property Name="Description" Type="nvarchar(max)" />
-    <Property Name="Categrory_Id" Type="int" Nullable="false" />
+    <Property Name="Category_Id" Type="int" Nullable="false" />
     <Property Name="Trainer_Id" Type="int" />
   </EntityType>
   <EntityType Name="Course_Lessons">

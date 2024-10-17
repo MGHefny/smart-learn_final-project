@@ -27,7 +27,7 @@
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Creation_Date" ColumnName="Creation_Date" />
           <ScalarProperty Name="Description" ColumnName="Description" />
-          <ScalarProperty Name="Categrory_Id" ColumnName="Categrory_Id" />
+          <ScalarProperty Name="Category_Id" ColumnName="Category_Id" />
           <ScalarProperty Name="Trainer_Id" ColumnName="Trainer_Id" />
         </MappingFragment>
       </EntityTypeMapping>

@@ -13,6 +13,8 @@ namespace SmartLearn
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+
+            AutoMapperConfig.Init();
         }
     }
 }
