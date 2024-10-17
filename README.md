@@ -22,3 +22,9 @@ finish db
 finsh admin login
 finsh categories page 
 finish creat and update and delet category with admin page
+*********
+16-10
+------
+craete the trainer page
+craete the Courses page
+
