@@ -73,4 +73,3 @@ G:\smart learn\SmartLearn\SmartLearn\bin\Microsoft.CodeDom.Providers.DotNetCompi
 G:\smart learn\SmartLearn\SmartLearn\obj\Debug\SmartLearn.csproj.CopyComplete
 G:\smart learn\SmartLearn\SmartLearn\obj\Debug\SmartLearn.dll
 G:\smart learn\SmartLearn\SmartLearn\obj\Debug\SmartLearn.pdb
-G:\smart learn\SmartLearn\SmartLearn\obj\Debug\SmartLearn.csprojAssemblyReference.cache

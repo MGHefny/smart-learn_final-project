@@ -6,9 +6,9 @@ using System.Web;
 
 namespace SmartLearn.Services
 {
+    // Trainer Service
     public interface ITrainerService
     {
-        // Trainer service
         int Create(Trainer trainer);
         Trainer FindByEmail(string email);
         Trainer ReadById(int Id);

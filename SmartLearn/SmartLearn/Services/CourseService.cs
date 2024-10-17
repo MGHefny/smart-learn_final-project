@@ -6,9 +6,9 @@ using System.Web;
 
 namespace SmartLearn.Services
 {
+    // Course Service
     public interface ICourseService
     {
-        // Courses Service
         int Create(Course course);
         int Update(Course updatedCourse);
         List<Course> ReadAll();

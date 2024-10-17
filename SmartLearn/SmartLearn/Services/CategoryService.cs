@@ -4,9 +4,9 @@ using System.Linq;
 
 namespace SmartLearn.Services
 {
+    // Category Service
     public interface ICategoryService
     {
-        //Category Service
         List<Category> ReadAll();
         int Create(Category newCategory);
         Category ReadById(int id);
