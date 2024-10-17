@@ -27,4 +27,13 @@ finish creat and update and delet category with admin page
 ------
 craete the trainer page
 craete the Courses page
+********
+17-10
+-------
+controll and service Trainer 
+controll and service Courses
+Handel Error 
+link the project page 
+upload media
+handell view and final run
 
